@@ -24,49 +24,49 @@ If you need help, please consult your instructor or GA -- *not* Professor Google
 //
 //    
 //}
-func travelling(at t: Int, speedLimit l: Int, isBirthday isb: Bool) -> Int
-{
-    var diff : Int = 0
-    if(t > l)
-    {
-        diff = t - l
-        switch isb{
-        case false:
-            if(diff>=1 && diff<=10)
-            {
-                diff = 100
-            }
-            else if(diff>=11 && diff<=20)
-            {
-                diff = 200
-            }
-            else if(diff>20)
-            {
-                diff = 500
-            }
-        case true:
-            if(diff>=6 && diff<=15)
-            {
-                diff = 100
-            }
-            else if(diff>=16 && diff<=25)
-            {
-                diff = 200
-            }
-            else if(diff>25)
-            {
-                diff = 500
-            }
-        }
-    }
-    return diff
-}
-
-
-print(travelling(at:50, speedLimit:60, isBirthday:false))
-print(travelling(at:60, speedLimit:55, isBirthday:false))
-print(travelling(at:50, speedLimit:35, isBirthday:false))
-print(travelling(at:50, speedLimit:35, isBirthday:true))
+//func travelling(at t: Int, speedLimit l: Int, isBirthday isb: Bool) -> Int
+//{
+//    var diff : Int = 0
+//    if(t > l)
+//    {
+//        diff = t - l
+//        switch isb{
+//        case false:
+//            if(diff>=1 && diff<=10)
+//            {
+//                diff = 100
+//            }
+//            else if(diff>=11 && diff<=20)
+//            {
+//                diff = 200
+//            }
+//            else if(diff>20)
+//            {
+//                diff = 500
+//            }
+//        case true:
+//            if(diff>=6 && diff<=15)
+//            {
+//                diff = 100
+//            }
+//            else if(diff>=16 && diff<=25)
+//            {
+//                diff = 200
+//            }
+//            else if(diff>25)
+//            {
+//                diff = 500
+//            }
+//        }
+//    }
+//    return diff
+//}
+//
+//
+//print(travelling(at:50, speedLimit:60, isBirthday:false))
+//print(travelling(at:60, speedLimit:55, isBirthday:false))
+//print(travelling(at:50, speedLimit:35, isBirthday:false))
+//print(travelling(at:50, speedLimit:35, isBirthday:true))
 
 
 
@@ -191,5 +191,3 @@ func myst(_ data:[Int]) -> [Int] {
 
 
  
-
-
