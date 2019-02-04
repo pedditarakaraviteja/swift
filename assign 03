@@ -1,0 +1,54 @@
+class Shape{
+
+  var centerX : Double = 0.0
+  var centerY : Double = 0.0 
+  var isSold : Bool = true
+  var quadrant : Double{
+    if centerX>=0 && centerY>=0{
+ return 0
+    }
+    else if centerX<=0 && centerY>=0{
+      return 1
+    }
+    else if centerX<=0 && centerY<=0{
+      return 2
+    }
+    else if centerX>=0 && centerY<=0{
+      return 3
+    }
+    return -1
+  }
+  func draw(){
+    print("I am a shape")
+  }
+  func translate(deltaX:Double,deltaY:Double){
+    centerX = centerX+deltaX
+    centerY = centerY+deltaY
+  }
+  func flip(axis:Character){
+    if axis == "Y"{
+centerX = centerX * -1
+    }
+    else 
+      {
+        centerY = centerY * -1
+      }
+  }
+  func perimeter() -> Double{
+    return 0.0
+  }
+  func area() -> Double {
+    return 0.0
+  }
+  
+  convenience init(){
+    self.init(centerX:0.0,centerY:0.0,isSolid:Bool)
+  }
+  convenience init(centerX:Double,centerY:Double){
+    self.init(centerX:centerX,centerY:centerY)
+  }
+  init(centerX:Double,centerY:Double,isSolid:Bool){
+    centerX = centerX;
+    isSolid = isSolid
+  }
+}
